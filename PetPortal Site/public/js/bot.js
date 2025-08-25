@@ -4,7 +4,7 @@ const sendMessageButton = document.querySelector("#send-message");
 const chatbotToggler = document.querySelector("#chatbot-toggler");
 const closeChatbot = document.querySelector("#close-chatbot");
 
-const API_KEY = "AIzaSyC5trVN2N95oAKf-BsPy0VzQKnZhsUYiqU";
+const API_KEY = "";
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 const userData = {
@@ -100,3 +100,4 @@ messageInput.addEventListener("input", () => {
 sendMessageButton.addEventListener("click", (e) => handleOutgoingMessage(e))
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
 closeChatbot.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
+
